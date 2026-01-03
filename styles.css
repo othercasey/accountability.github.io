@@ -1,0 +1,272 @@
+:root {
+  --vw-background: lavender;
+  --vw-accent-light: thistle;
+  --vw-accent-medium: #aaaaee;
+  --vw-accent-dark: darkslateblue;
+  --vw-text: #2e1466;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--vw-background);
+  font-size: 40px;
+  /* Base font size */
+  color: var(--vw-text);
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+	flex-grow: 1;
+  width: 90%;
+  min-height: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+header a {
+  font-size: 2em;
+  font-weight: bold;
+  /*text-decoration: none;*/
+  color: var(--vw-text);
+  text-shadow: 7px 7px 5px var(--vw-accent-light);
+  font-family: "Codystar", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*tron header*/
+.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Vaporwave Header*/
+.codystar-regular {
+  font-family: "Codystar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Vaporwave text*/
+.mulish-normal {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Vaporwave bold text*/
+.mulish-bold {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px -10px;
+  padding: 0;
+  background-color: var(--vw-accent-medium);
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+}
+
+nav ul li a:hover {
+  background-color: var(--vw-accent-dark);
+}
+
+article {
+  border: 15px solid var(--vw-accent-medium);
+  border-radius: 50px;
+  width: 90%;
+  margin: 50px 0px 50px 50px;
+  padding: 10px;
+  box-shadow: 15px 15px 20px var(--vw-accent-dark);
+}
+
+div {
+  margin: 30px;
+}
+
+footer {
+  background-color: var(--vw-accent-medium);
+  color: white;
+  text-decoration: none;
+  margin: 0px -10px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--vw-text);
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: var(--vw-text);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 0.2;
+  color: var(--vw-text);
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 0.8;
+  color: var(--vw-text);
+}
+
+a {
+	text-decoration: none;
+	color: var(--vw-accent-dark);
+}
+
+a:hover {
+	color: var(--vw-accent-light);
+	background-color: var(--vw-accent-medium);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 99%;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: var(--vw-color-2);
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: "☆ ";
+  margin-left: 1em;
+}
+
+ol {
+	margin-left: 1em;
+}
+
+article ol a, article ul a {
+	font-weight: bold;
+	color: var(--vw-accent-dark);
+	background-color: var(--vw-accent-light);
+}
+
+article ol a:hover, article ul a:hover {
+	font-weight: bold;
+	color: var(--vw-accent-medium);
+	background-color: var(--vw-accent-light);
+}
+
+.arrows {
+  list-style-type: "→ ";
+  margin-left: 1em;
+}
+
+.sun {
+	list-style-type: "☼ ";
+	margin-left: 1em;
+}
+
+.center {
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+
+.card-theme {
+	background-image: radial-gradient(circle, var(--vw-card-color), lavender);
+}
+
+.card-theme h2 {
+  border-bottom: 5px solid var(--vw-card-color, var(--vw-text));
+}
+
+/* blue */
+.vw-combo-0 {
+	--vw-card-translucent: #ADD8E680;
+  --vw-card-color: lightblue;
+	
+}
+
+/* green */
+.vw-combo-1 {
+  --vw-card-translucent: #A5C9A580;
+  --vw-card-color: #A5C9A5;
+  
+}
+
+/* peach */
+.vw-combo-2 {
+  --vw-card-translucent: #FFDAB980;
+  --vw-card-color: peachpuff;
+  
+}
+
+/* pink */
+.vw-combo-3 {
+  --vw-card-translucent: #FFC0CB80;
+  --vw-card-color: pink;
+  
+}
+
+/* purple */
+.vw-combo-4 {
+  --vw-card-translucent: lavender;
+  --vw-card-color: #aaaaee;
+}
+
+.button-theme {
+	background-image: radial-gradient(circle, #aaaaee, lightblue, #A5C9A5, peachpuff, pink);
+	text-align: center;
+  color: var(--vw-text);
+  font-weight: bold;
+	font-size: 1.5em;
+}
